@@ -1,0 +1,214 @@
+{
+  "pages": {
+    "home": {
+      "type": "NORMAL",
+      "mode": "FIT_WINDOW",
+      "layout": {
+        "LARGE": "home-layout-large",
+        "MEDIUM": "layout_59",
+        "SMALL": "layout_63"
+      },
+      "isVisible": true,
+      "id": "home",
+      "isDefault": true,
+      "header": false,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "home-layout-large": {
+      "type": "FIXED",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_58": {
+      "type": "FIXED"
+    },
+    "layout_59": {
+      "type": "FIXED",
+      "content": {},
+      "order": []
+    },
+    "layout_63": {
+      "type": "FIXED",
+      "content": {},
+      "order": []
+    },
+    "layout_64": {
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "3.4%",
+            "right": "76.8%",
+            "top": "90.4%",
+            "bottom": "5.9%",
+            "width": "19.8%",
+            "height": "3.7%"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.12.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapState": null,
+        "initialMapDataSourceID": "dataSource_3"
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_64"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3",
+          "mainDataSourceId": "dataSource_3"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/get_coords/",
+      "version": "1.12.0",
+      "label": "Get Coords",
+      "config": {},
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    }
+  },
+  "exbVersion": "1.12.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "launchpad",
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Southern Lake Huron Air Photos - 1954",
+      "itemId": "a27249b3897e4494b1eed045541f026c",
+      "portalUrl": "https://uwaterloo.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Southern Lake Huron Air Photos - 1954",
+      "itemId": "a27249b3897e4494b1eed045541f026c",
+      "portalUrl": "https://uwaterloo.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "id": "dataSource_3",
+      "type": "WEB_MAP",
+      "sourceLabel": "Related Trees Heatmap - BW Edits",
+      "itemId": "1cb9d5a442354ddebc84378b2ed84a58",
+      "portalUrl": "https://uwaterloo.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "home": []
+    }
+  ],
+  "timestamp": 1688738657972,
+  "header": {
+    "layout": {
+      "LARGE": "layout_58"
+    },
+    "height": {
+      "LARGE": 75
+    }
+  },
+  "originExbVersion": "1.12.0",
+  "attributes": {
+    "portalUrl": "https://uwaterloo.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#005e95",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#ffffff",
+      "color": "#4c4c4c",
+      "link": "#0079c1"
+    },
+    "button": {
+      "bg": "#0079c1",
+      "color": "#ffffff"
+    },
+    "logo": {
+      "small": ""
+    },
+    "fonts": {
+      "base": {
+        "url": "",
+        "family": "Avenir Next"
+      },
+      "heading": {
+        "url": "",
+        "family": "Avenir Next"
+      }
+    }
+  }
+}
